@@ -1,3 +1,45 @@
+# Next.js Web3 Boilerplate
+
+A Next.js starter kit template with Next.js 11 + React 17 + Typescript + Web3-react w/ injected-connector, network-connector, walletconnect-connector
+
+Other tools included: Tailwind CSS 2, Autoprefixer, Sass, PostCSS, ESLint, Prettier.
+
+## Getting Started
+
+```bash
+# Install Dependencies
+yarn
+
+# Run the development server
+yarn dev
+```
+
+## Scripts
+
+**Next.js**
+
+```bash
+# Build
+yarn build
+
+# Start server with build files
+yarn start
+```
+
+**Prettier**
+
+```bash
+# Use Prettier to do Format Check for files under ./src
+yarn fc
+
+# Use Prettier to do Format Fix for files under ./src
+yarn ff
+```
+
+---
+
+content below are generated with create-next-app
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
