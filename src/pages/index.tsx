@@ -136,13 +136,13 @@ function Header() {
   return (
     <>
       <h1 style={{ margin: '1rem' }}>{active ? '🟢' : error ? '🔴' : '🟠'}</h1>
-      <h5>{chainId ? chainId : '-'}</h5>
+      <h5>Chain ID: {chainId ? chainId : '-'}</h5>
       <h5>
-        <BlockNumber />
+        Current Block: <BlockNumber />
       </h5>
-      <h5>{account ? account : '-'}</h5>
+      <h5>Account: {account ? account : '-'}</h5>
       <h5>
-        <Balance />
+        Balance: <Balance />
       </h5>
     </>
   )
@@ -186,21 +186,20 @@ function App() {
         </button>
       ) : error ? (
         <button
-        style={{
-          height: '3rem',
-          marginTop: '2rem',
-          borderRadius: '1rem',
-          borderColor: 'red',
-          cursor: 'pointer'
-        }}
-        onClick={() => {
-          deactivate()
-        }}
-      >
-        Cancel Connect
-      </button>
-      ) :
-        (
+          style={{
+            height: '3rem',
+            marginTop: '2rem',
+            borderRadius: '1rem',
+            borderColor: 'red',
+            cursor: 'pointer'
+          }}
+          onClick={() => {
+            deactivate()
+          }}
+        >
+          Cancel Connect
+        </button>
+      ) : (
         'connect'
       )}
       <hr />
