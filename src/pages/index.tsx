@@ -14,6 +14,8 @@ import { formatEther } from '@ethersproject/units'
 import { useEagerConnect, useInactiveListener } from '../hooks'
 import { injected, network, walletconnect } from '../connectors'
 
+const POLLING_INTERVAL = 3000
+
 enum ConnectorNames {
   Injected = 'Browser Wallet',
   Network = 'RPC Connect',
@@ -41,7 +43,7 @@ function getErrorMessage(error: Error) {
 
 function getLibrary(provider: any): Web3Provider {
   const library = new Web3Provider(provider)
-  library.pollingInterval = 1000
+  library.pollingInterval = POLLING_INTERVAL
   return library
 }
 
