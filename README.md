@@ -26,7 +26,7 @@ cp .env.example .env.local
 ### Configs
 
 - `src/appConfig.ts`: app name, title, SEO etc.
-- `src/pages/_app.tsx`:  chains, providers, wallet connectors
+- `src/pages/_app.tsx`: chains, providers, wallet connectors
 
 ### Scripts
 
