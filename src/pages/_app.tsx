@@ -34,10 +34,10 @@ const gnosisChain: Chain = {
   nativeCurrency: {
     decimals: 18,
     name: 'xDai',
-    symbol: 'xDAI',
+    symbol: 'XDAI',
   },
   rpcUrls: {
-    default: 'http://rpc.gnosischain.com',
+    default: 'https://gnosischain-rpc.gateway.pokt.network',
   },
   blockExplorers: {
     default: { name: 'BlockScout', url: 'https://blockscout.com/xdai/mainnet' },
