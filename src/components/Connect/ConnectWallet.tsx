@@ -2,7 +2,7 @@ import { useAccount } from 'wagmi'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 
 interface Props {
-  show: 'always' | 'connected' | 'disconnected'
+  show?: 'always' | 'connected' | 'disconnected'
 }
 
 export default function ConnectWallet({ show = 'always' }: Props) {
